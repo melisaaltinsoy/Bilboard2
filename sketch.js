@@ -1,3 +1,5 @@
+let angle=0;
+
 var n1 = 0.3;
 var n2 = 0.3;
 var n3 = 0.3;
@@ -8,7 +10,7 @@ var b = 1;
 var osc = 0;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(400, 400,WEBGL);
   //slider = createSlider(0, 10, 5, 1);
 }
 
@@ -41,11 +43,15 @@ function draw() {
 
   stroke(255);
   noFill();
+  translate(mouseX-width/2,mouseY-height/2);
+  rotateX(angle);
+  rotateY(angle * 0.3);
 
   var radius = 100;
 
   var total = 200;
   var increment = TWO_PI / total;
+  
 
   beginShape();
   for (var angle1 = 0; angle1 < TWO_PI; angle1 += increment) {
@@ -59,6 +65,7 @@ function draw() {
 
     vertex(x, y, z);
     }
+     angle += 0.07;
   }
   endShape(CLOSE);
 
