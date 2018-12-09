@@ -10,7 +10,7 @@ var b = 1;
 var osc = 0;
 
 function setup() {
-  createCanvas(400, 400,WEBGL);
+  createCanvas(1200, 1200,WEBGL);
   //slider = createSlider(0, 10, 5, 1);
 }
 
@@ -53,7 +53,7 @@ function draw() {
   var increment = TWO_PI / total;
   
 
-  beginShape();
+  beginShape(POINTS);
   for (var angle1 = 0; angle1 < TWO_PI; angle1 += increment) {
     for (var angle2 = 0; angle2 < PI; angle2 += increment){
     
