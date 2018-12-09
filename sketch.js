@@ -43,8 +43,8 @@ function draw() {
 
   stroke(255);
   noFill();
-  translate(mouseX-width/2,mouseY-height/2);
-  rotateX(angle);
+  //translate(mouseX-width/2,mouseY-height/2);
+  //rotateX(angle);
   rotateY(angle * 0.3);
 
   var radius = 100;
