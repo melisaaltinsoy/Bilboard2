@@ -10,7 +10,7 @@ var b = 1;
 var osc = 0;
 
 function setup() {
-  createCanvas(1600, 900,WEBGL);
+  createCanvas(1600, 900, WEBGL);
   //slider = createSlider(0, 10, 5, 1);
 }
 
@@ -36,7 +36,7 @@ function supershape(theta) {
 
 function draw() {
   m = map(sin(osc), -1, 1, 0, 10); //slider.value();
-  osc += 0.04;
+  osc += 0.02;
 
   background(0);
   translate(width / 2, height / 2);
