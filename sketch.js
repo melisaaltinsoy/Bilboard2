@@ -10,7 +10,7 @@ var b = 1;
 var osc = 0;
 
 function setup() {
-  createCanvas(1200, 1200,WEBGL);
+  createCanvas(1600, 900,WEBGL);
   //slider = createSlider(0, 10, 5, 1);
 }
 
